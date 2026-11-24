@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Endereço e Contatos - GlitchTech</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Ícones do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar bg-success mb-4" data-bs-theme="dark">
+      <div class="container-fluid align-items-center">
+        <!-- Marca da empresa -->
+        <a href="pagina-principal.html" class="navbar-brand mb-0 h1 text-light">GlitchTech</a>
+        
+        <!-- Grupo de botões de navegação -->
+        <div class="d-flex gap-2 ms-auto">
+          <a href="index.html" class="btn btn-outline-light">Voltar</a>
+          <a href="depoimentos.html" class="btn btn-light">Depoimentos</a>
+          <a href="blog.html" class="btn btn-light">Blog</a>
+          <a href="pagina-principal.html" class="btn btn-light">Serviços</a>
+          <a href="sobre-empresa.html" class="btn btn-light">Sobre Empresa</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="container mb-5">
+      <div class="row g-4">
+        
+        <!-- Coluna 1: Informações e Mapa -->
+        <div class="col-12 col-lg-6">
+          <div class="card p-4 shadow-sm h-100">
+            <h1 class="h4 mb-3">Informações de Contato</h1>
+            
+            <address class="mb-4 fs-6">
+              <p class="mb-2">
+                <i class="bi bi-building text-success me-2"></i>
+                <strong>Razão Social:</strong> Serviço de Manutenção de computadores GlitchTech
+              </p>
+              <p class="mb-2">
+                <i class="bi bi-geo-alt-fill text-success me-2"></i>
+                <strong>Endereço:</strong> Av. Fernando Machado, 1115 - Centro, Chapecó - SC, 89814-470
+              </p>
+              <p class="mb-2">
+                <i class="bi bi-envelope-fill text-success me-2"></i>
+                <strong>E-mail:</strong> <a href="mailto:contato@glitchtech.com.br" class="text-decoration-none">contato@glitchtech.com.br</a>
+              </p>
+              <p class="mb-2">
+                <i class="bi bi-telephone-fill text-success me-2"></i>
+                <strong>Telefone:</strong> <a href="tel:+554933000000" class="text-decoration-none">+55 (49) 3300-0000</a>
+              </p>
+              <p class="mb-3">
+                <i class="bi bi-whatsapp text-success me-2"></i>
+                <strong>WhatsApp:</strong> <a href="https://wa.me/5549989003980" target="_blank" class="text-decoration-none">+55 (49) 98900-3980</a>
+              </p>
+            </address>
+
+            <!-- Links para Redes Sociais -->
+            <div class="mb-4">
+              <h2 class="h6 mb-2">Siga a GlitchTech:</h2>
+              <div class="d-flex gap-2">
+                <a href="https://instagram.com" target="_blank" class="btn btn-outline-success btn-sm" aria-label="Instagram">
+                  <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <a href="https://facebook.com" target="_blank" class="btn btn-outline-success btn-sm" aria-label="Facebook">
+                  <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="btn btn-outline-success btn-sm" aria-label="LinkedIn">
+                  <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://youtube.com" target="_blank" class="btn btn-outline-success btn-sm" aria-label="YouTube">
+                  <i class="bi bi-youtube"></i> YouTube
+                </a>
+              </div>
+            </div>
+
+            <h2 class="h5 mb-3">Nossa Localização</h2>
+            <div class="ratio ratio-16x9 rounded overflow-hidden border">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.978643171815!2d-52.61741582379367!3d-27.10803409605703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4b51a5ddb9eb7%3A0xb3cf51d9ebfefef1!2sAv.%20Fernando%20Machado%2C%201115%20-%20Centro%2C%20Chapec%C3%B3%20-%20SC%2C%2089814-470!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Formulário de Mensagem -->
+        <div class="col-12 col-lg-6">
+          <div class="card p-4 shadow-sm h-100">
+            <h2 class="h4 mb-3">Envie uma Mensagem</h2>
+            <form action="salvar_contato.php" method="POST">
+              <div class="mb-3">
+                <label for="inputNome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputNome" name="nome" placeholder="Digite seu nome" required>
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="inputEmail" name="email" placeholder="Digite seu e-mail" required>
+              </div>
+              <div class="mb-3">
+                <label for="inputMensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="inputMensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui..." required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success">Enviar Mensagem</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
